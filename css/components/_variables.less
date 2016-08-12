@@ -1,0 +1,80 @@
+// colour palette 
+
+@black: #000;
+@dark-grey: #333;
+@grey: #777;
+@light-grey: #ebebeb;
+@off-white: #f5f5f5;
+@white: #ffffff;
+
+@blue1: #3498db;
+@blue2: #2980b9;
+@red1: #e74c3c;
+@red2: #c0392b;
+@yellow1: #fff400;
+@yellow2: ##fae300;
+@green1: #2ecc71;
+@green2: #27ae60;
+@orange1: #e67e22;
+@orange2: #d35400;
+@aqua1: #b0e0e6;
+@aqua2: #55cae3;
+@purple1: #9b59b6;
+@purple2: #8e44ad;
+@navy1: #34495e;
+@navy2: #2c3e50;
+@dark-sand: #ddb539;
+@grey-white: #f2f1e1;
+@light-green: #87c162;
+@teal-green: #0f6b5b;
+@pink1: #fdcfd7;
+@pink2: #fa8072;
+    
+// background colours 
+@primary-background: @white;
+@secondary-background: @dark-grey;
+@inverse-background: @black;
+
+// text colours 
+@primary-text: @dark-grey;
+@light-text: @dark-grey;
+@loud-text: @black;
+@inverse-text: @white;
+@heading-text: @light-grey;
+
+// link colours 
+@primary-link-color: @light-grey;
+@primary-link-color-hover: @blue1;
+
+// primary border properties 
+@border-color: @light-grey;
+@border-size: 1px;
+@border-type: solid;
+@border-focus: @light-grey;
+
+// typography 
+@body-copy: "Roboto", helvetica, arial, verdana, sans-serif;
+@heading-copy: "Roboto", helvetica, arial, verdana, sans-serif;
+@base-font-size: 14px;
+@font-size: 1em;
+@base-line-height: 1.5; 
+
+// layout 
+@margin: 1em;
+@padding: 1em;
+
+// MIXINS
+
+// round corners or Border radius
+.round-corners (@radius: 2px) {
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+// animation transitions
+.transition (@transition: background .1s linear) {
+  -moz-transition: @transition;
+  -webkit-transition: @transition;
+  transition: background @transition;
+}

@@ -1,0 +1,77 @@
+
+//Labels
+.ct-label {
+    font-size: 0.75em;
+    color: @black;
+}
+// pie charts
+/*ct-series-a, ct-series-b, ct-series-c map to a piece of a pie chart */
+.ct-series-a .ct-area,
+.ct-series-a .ct-slice-pie {
+    fill: @blue1;    
+}
+
+.ct-series-b .ct-area,
+.ct-series-b .ct-slice-pie {
+    fill: @yellow1;
+}
+.ct-series-c .ct-area,
+.ct-series-c .ct-slice-pie {
+    fill: @purple1;
+}
+.ct-series-d .ct-area,
+.ct-series-d .ct-slice-pie {
+    fill: @pink1;
+}
+.ct-series-e .ct-area,
+.ct-series-e .ct-slice-pie {
+    fill: @aqua1;
+}
+
+//donut charts
+.ct-series-a .ct-slice-donut {
+  /* give the donut slice a custom colour */
+  stroke: @green2;
+}
+.ct-series-b .ct-slice-donut {
+  /* give the donut slice a custom colour */
+  stroke-width: 70px !important;
+  stroke: @blue1;
+}
+.ct-series-c .ct-slice-donut {
+  /* give the donut slice a custom colour */
+  stroke: @yellow1;
+}
+.ct-series-d .ct-slice-donut {
+  /* give the donut slice a custom colour */  
+  stroke: @red1;
+}
+
+//line-charts 
+.ct-series-a .ct-line,
+.ct-series-a .ct-point {
+    stroke: @purple1;
+}
+
+.ct-series-b .ct-line,
+.ct-series-b .ct-point {
+    stroke: @aqua1;
+}
+
+//bar charts
+/* Use this selector to override bar styles on bar charts. Bars are also strokes so you have maximum freedom in styling them. */
+.ct-series-a .ct-bar {
+  /* Colour of your bars */
+  stroke: @aqua2;
+  /* The width of your bars */
+  stroke-width: 10px;  
+  
+}
+
+.ct-series-b .ct-bar {
+  /* Colour of your bars */
+  stroke: @purple1;
+  /* The width of your bars */
+  stroke-width: 10px;  
+  
+}
